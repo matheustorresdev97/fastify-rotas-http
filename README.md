@@ -2,18 +2,9 @@
 
 Repositório contendo dois projetos Node.js desenvolvidos com Fastify, Knex, Zod e TypeScript,
 cada um com foco em diferentes domínios de aplicação e boas práticas de arquitetura e testes.
-
----
-
-## 📁 Estrutura do repositório
-.
-├── meals-api/           # 🍽️ API para controle de refeições e dieta
-└── transactions-api/    # 💸 API para controle financeiro de transações
-
----
-
-
 Cada pasta contém seu próprio README, configuração de ambiente e scripts independentes.
+
+---
 
 ## 🚀 Tecnologias utilizadas
 
