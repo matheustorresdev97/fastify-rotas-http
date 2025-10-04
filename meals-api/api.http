@@ -1,26 +1,52 @@
-### CRIAR USUARIO
+@baseUrl = http://localhost:3333
+@sessionId = SEU_SESSION_ID_AQUI
 
-POST http://localhost:3333/users
+### 🥗 Criar uma refeição
+POST {{baseUrl}}/meals
 Content-Type: application/json
+Cookie: sessionId={{sessionId}}
 
 {
-    "name": "Matheus",
-    "email": "matheus@email.com"
+  "name": "Almoço saudável",
+  "description": "Peito de frango com arroz integral e salada",
+  "isOnDiet": true,
+  "date": "2025-10-04T12:30:00Z"
 }
 
-### CRIAR REFEIÇÃO
-POST http://localhost:3333/meals
+###
+
+### 📋 Listar todas as refeições
+GET {{baseUrl}}/meals
+Cookie: sessionId={{sessionId}}
+
+###
+
+### 🔍 Buscar uma refeição específica (substitua pelo UUID real)
+GET {{baseUrl}}/meals/UUID_DA_REFEICAO
+Cookie: sessionId={{sessionId}}
+
+###
+
+### ✏️ Atualizar uma refeição
+PUT {{baseUrl}}/meals/UUID_DA_REFEICAO
 Content-Type: application/json
-Cookie: 3a22f97e-c110-4a4f-b927-22a442687bf
+Cookie: sessionId={{sessionId}}
 
 {
-    "name": "Sorvete",
-    "description": "Sobremesa",
-    "isOnDiet": false,
-    "date": "2025-10-04T12:30:00Z"
+  "name": "Jantar leve",
+  "description": "Sopa de legumes e frango desfiado",
+  "isOnDiet": true,
+  "date": "2025-10-04T20:00:00Z"
 }
 
-### LISTAR REFEIÇÕES DO USUARIO
-GET http://localhost:3333/meals
-Cookie: 3a22f97e-c110-4a4f-b927-22a442687bf
+###
 
+### ❌ Deletar uma refeição
+DELETE {{baseUrl}}/meals/UUID_DA_REFEICAO
+Cookie: sessionId={{sessionId}}
+
+###
+
+### 📊 Métricas das refeições
+GET {{baseUrl}}/meals/metrics
+Cookie: sessionId={{sessionId}}
