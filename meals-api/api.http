@@ -8,3 +8,13 @@ Content-Type: application/json
     "email": "matheus@email.com"
 }
 
+### CRIAR REFEIÇÃO
+POST http://localhost:3333/meals
+Content-Type: application/json
+
+{
+    "name": "Sorvete",
+    "description": "Sobremesa",
+    "isOnDiet": false,
+    "date": "2025-10-04T12:30:00Z"
+}
