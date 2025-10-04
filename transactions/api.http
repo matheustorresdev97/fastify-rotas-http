@@ -1,0 +1,20 @@
+### CRIAR TRANSAÇÃO DE CRÉDITO
+POST http://localhost:3333/transactions
+Content-Type: application/json
+
+{
+  "title": "Salário",
+  "amount": 5000,
+  "type": "credit"
+}
+
+### CRIAR TRANSAÇÃO DE DÉBITO
+
+POST http://localhost:3333/transactions
+Content-Type: application/json
+
+{
+  "title": "Conta de Luz",
+  "amount": 350,
+  "type": "debit"
+}
