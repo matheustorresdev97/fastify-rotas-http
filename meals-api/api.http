@@ -11,6 +11,7 @@ Content-Type: application/json
 ### CRIAR REFEIÇÃO
 POST http://localhost:3333/meals
 Content-Type: application/json
+Cookie: 3a22f97e-c110-4a4f-b927-22a442687bf
 
 {
     "name": "Sorvete",
@@ -18,3 +19,8 @@ Content-Type: application/json
     "isOnDiet": false,
     "date": "2025-10-04T12:30:00Z"
 }
+
+### LISTAR REFEIÇÕES DO USUARIO
+GET http://localhost:3333/meals
+Cookie: 3a22f97e-c110-4a4f-b927-22a442687bf
+
