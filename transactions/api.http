@@ -24,3 +24,6 @@ GET http://localhost:3333/transactions
 
 ### LISTAR TRANSAÇÃO POR ID
 GET http://localhost:3333/transactions/8e1d051e-9959-44f9-a6e3-c7b2e398089d
+
+### RESUMO DE TRANSACOES
+GET http://localhost:3333/transactions/summary
