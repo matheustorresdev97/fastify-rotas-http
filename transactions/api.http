@@ -23,7 +23,9 @@ Content-Type: application/json
 GET http://localhost:3333/transactions
 
 ### LISTAR TRANSAÇÃO POR ID
-GET http://localhost:3333/transactions/8e1d051e-9959-44f9-a6e3-c7b2e398089d
+GET http://localhost:3333/transactions/6ba15642-30e4-46c8-baeb-8a52909e535c
+Cookie: 450cd8b4-c229-450c-baa4-ba2a6cc0fbb6
 
 ### RESUMO DE TRANSACOES
 GET http://localhost:3333/transactions/summary
+Cookie: 450cd8b4-c229-450c-baa4-ba2a6cc0fbb6
